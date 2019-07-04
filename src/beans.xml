@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+>
+    <!--扫描base-package-->
+    <context:component-scan base-package="com.njnu"/>
+    <context:annotation-config/>
+
+    <!--属性注入-->
+    <!--<bean id="category" class="com.njnu.bean.Category" scope="singleton">-->
+        <!--<property name="id" value="1"/>-->
+        <!--<property name="category" value="计算机"/>-->
+        <!--<property name="remark" value="计算机remark"/>-->
+    <!--</bean>-->
+    <!--<bean id="book" class="com.njnu.bean.Book">-->
+        <!--<property name="id" value="1"/>-->
+        <!--<property name="boonName" value="《java入门》"/>-->
+        <!--<property name="category" ref="category"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="box" class="com.njnu.print.InBox">-->
+        <!--<property name="color" value="白色"/>-->
+        <!--<property name="weight" value="1.0"/>-->
+    <!--</bean>-->
+    <!--<bean id="paperA4" class="com.njnu.print.PaperA4">-->
+        <!--<property name="name" value="A4纸张"/>-->
+    <!--</bean>-->
+    <!--<bean id="paperA3" class="com.njnu.print.PaperA3">-->
+    <!--</bean>-->
+    <!--<bean id="printer" class="com.njnu.print.Printer">-->
+        <!--<property name="inBox" ref="box"/>-->
+        <!--<property name="paper" ref="paperA3"/>-->
+    <!--</bean>-->
+</beans>
